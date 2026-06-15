@@ -30,16 +30,16 @@ npm run dev      # http://localhost:3000
 
 ## Contact form (real email sending)
 
-The form posts to `app/api/contact/route.ts`, which delivers messages via
-[Web3Forms](https://web3forms.com) (free, no domain needed).
+The form submits directly from the browser to [Web3Forms](https://web3forms.com)
+(free; their free plan only accepts client-side submissions).
 
-1. Sign up at **web3forms.com** with `layan.hani.alharbi@gmail.com`
-2. Copy the **Access Key** they email you
-3. `cp .env.local.example .env.local` and paste the key into `WEB3FORMS_ACCESS_KEY`
-4. Restart `npm run dev`
+1. Sign up at **web3forms.com** and create an Access Key for your email
+2. `cp .env.local.example .env.local` and paste the key into `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
+3. Restart `npm run dev`
 
-Until a key is set, the form shows a friendly "email me directly" fallback.
-On Vercel, add `WEB3FORMS_ACCESS_KEY` under **Project → Settings → Environment Variables**.
+On Vercel, add `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` under **Project → Settings →
+Environment Variables**. The key is public by design; spam is handled by a
+honeypot field plus the Web3Forms dashboard.
 
 ## Build
 

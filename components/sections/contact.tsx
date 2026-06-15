@@ -43,18 +43,41 @@ export function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (status === "sending") return;
+
+    // Honeypot — bots fill the hidden "company" field; humans don't.
+    if (form.company) {
+      setStatus("sent");
+      setForm({ name: "", email: "", message: "", company: "" });
+      return;
+    }
+
     setStatus("sending");
     setErrorMsg("");
 
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    if (!accessKey) {
+      setStatus("error");
+      setErrorMsg("The form isn't configured yet.");
+      return;
+    }
+
     try {
-      const res = await fetch("/api/contact", {
+      // Web3Forms requires a client-side (browser) submission on the free plan.
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `Portfolio inquiry from ${form.name}`,
+          from_name: "Layan Alharbi Portfolio",
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
       });
       const data = await res.json();
       if (!res.ok || !data.success) {
-        throw new Error(data.error || "Could not send your message.");
+        throw new Error(data.message || "Could not send your message.");
       }
       setStatus("sent");
       setForm({ name: "", email: "", message: "", company: "" });
