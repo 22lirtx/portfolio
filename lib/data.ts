@@ -233,6 +233,7 @@ export const PROJECTS: Project[] = [
     tags: ["Civic Tech", "Arabic-first RTL", "Accessibility", "Mobile App"],
     figmaUrl:
       "https://www.figma.com/design/eCk4bpyvJaibL5zA4CwCBR/jaddathon?node-id=406-7661",
+    cover: "/projects/murshid/cover.png",
     gallery: [
       { src: "/projects/murshid/01-home.png", label: "Home — prayer times, Tawaf & Sa'i tracker, live crowd-density alerts" },
       { src: "/projects/murshid/02-language.png", label: "Multilingual onboarding — Arabic, English, Indonesian, Urdu, Turkish & French" },
