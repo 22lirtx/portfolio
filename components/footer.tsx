@@ -5,13 +5,14 @@ export function Footer() {
   return (
     <footer className="relative border-t border-warm-200/60 py-12 dark:border-white/10">
       <div className="section-pad flex flex-col items-center justify-between gap-6 sm:flex-row">
-        <div className="flex items-center gap-2.5">
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-rose-gradient text-xs font-semibold text-white">
-            LA
-          </span>
-          <span className="font-display text-sm font-semibold">
-            Layan Alharbi
-          </span>
+        <div className="flex items-center">
+          <img
+            src="/brand/logo.png"
+            alt="Layan Alharbi — UI/UX Designer"
+            width={869}
+            height={458}
+            className="h-8 w-auto"
+          />
         </div>
 
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">

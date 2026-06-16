@@ -49,12 +49,21 @@ export const metadata: Metadata = {
     description:
       "A passionate designer and technology enthusiast focused on building intuitive, accessible, and impactful digital products.",
     siteName: "Layan Alharbi",
+    images: [
+      {
+        url: "/brand/logo-card.png",
+        width: 1254,
+        height: 1254,
+        alt: "Layan Alharbi — UI/UX Designer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Layan Alharbi — UI/UX & Product Designer",
     description:
       "Designing intelligent experiences where technology meets human needs.",
+    images: ["/brand/logo-card.png"],
   },
   robots: {
     index: true,

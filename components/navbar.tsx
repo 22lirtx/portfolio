@@ -52,13 +52,14 @@ export function Navbar() {
             scrolled ? "glass-strong shadow-glass !px-5 !py-2.5" : "!px-2"
           }`}
         >
-          <a href="#top" className="group flex items-center gap-2.5" aria-label="Layan Alharbi — home">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-rose-gradient text-sm font-semibold text-white shadow-glow">
-              LA
-            </span>
-            <span className="font-display text-base font-semibold tracking-tight">
-              Layan Alharbi
-            </span>
+          <a href="#top" className="group flex items-center" aria-label="Layan Alharbi — home">
+            <img
+              src="/brand/logo.png"
+              alt="Layan Alharbi — UI/UX Designer"
+              width={869}
+              height={458}
+              className="h-7 w-auto transition-transform duration-300 group-hover:scale-[1.03] sm:h-8"
+            />
           </a>
 
           <div className="hidden items-center gap-1 md:flex">
