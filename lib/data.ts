@@ -276,6 +276,7 @@ export const PROJECTS: Project[] = [
     tags: ["AI Assistant", "Arabic-first RTL", "Voice UX", "Civic Tech"],
     figmaUrl:
       "https://www.figma.com/design/mnqDVenyWUZbz2ufdcTBwh/?node-id=1-1723",
+    cover: "/projects/ruh/cover.png",
     gallery: [
       { src: "/projects/ruh/01-home.png", label: "Home — the AI smart voice assistant with quick access to rituals, duas, gates & prayer times" },
       { src: "/projects/ruh/02-trip.png", label: "Trip selection — tailored guidance for Umrah or the full Hajj journey" },
