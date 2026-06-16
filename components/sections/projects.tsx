@@ -8,7 +8,7 @@ import { PROJECTS, type Project } from "@/lib/data";
 
 const COVER_GRADIENTS: Record<string, string> = {
   seraaj: "from-rose-300 via-gold to-warm-700",
-  ruhub: "from-gold-light via-rose-400 to-gold-deep",
+  ruhub: "from-[#d9b88a] via-[#b78a5a] to-[#6b7a55]",
   afaq: "from-warm-700 via-gold to-rose-300",
   murshd: "from-[#1b1740] via-[#4c1d95] to-[#7c3aed]",
   ruh: "from-[#3b2566] via-[#6d4aa8] to-[#b69ad6]",
@@ -233,16 +233,13 @@ export function Projects() {
           description="A selection of products where research, strategy, and craft come together to solve real problems."
         />
 
-        <div className="mt-16 grid gap-7 lg:grid-cols-2">
-          {PROJECTS.map((project, i) => (
-            <div
+        <div className="mt-16 grid gap-7">
+          {PROJECTS.map((project) => (
+            <ProjectCard
               key={project.id}
-              className={
-                i === 0 || project.gallery ? "lg:col-span-2" : ""
-              }
-            >
-              <ProjectCard project={project} onOpen={() => setActive(project)} />
-            </div>
+              project={project}
+              onOpen={() => setActive(project)}
+            />
           ))}
         </div>
       </div>

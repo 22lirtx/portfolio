@@ -132,32 +132,41 @@ export const PROJECTS: Project[] = [
     id: "ruhub",
     index: "02",
     name: "Ruhub",
-    tagline: "Tourism Web App",
+    tagline: "Asir Tourism Companion",
     description:
-      "A tourism web application built at the Asir Hackathon, where I led UI design for a five-person team and delivered the complete interface in under 20 hours — finishing Top 4 out of 50+ teams.",
+      "رحب — a tourism app for the Asir region of Saudi Arabia with an AI assistant that builds a ready-made daily plan: curated experiences across Jabal Al-Soudah, local restaurants, and activities, each bookable in a tap. Built at the Asir Hackathon, where I led UI design for a five-person team to a Top-4 finish out of 50+ teams.",
     year: "Aug 2025",
     role: "Design Lead · Asir Hackathon",
-    tags: ["Hackathon", "Tourism", "Top 4 / 50+", "0→1"],
+    tags: ["Hackathon", "Tourism", "AI Planner", "Top 4 / 50+"],
+    figmaUrl:
+      "https://www.figma.com/proto/IULsTKCVdQ2dZXSDt0anHD/?node-id=247-6313",
+    gallery: [
+      { src: "/projects/ruhub/01-plan.png", label: "“Your day is ready” — an AI-generated itinerary with timed experiences and one-tap booking" },
+      { src: "/projects/ruhub/02-assistant.png", label: "Smart assistant — conversationally tailors the trip to your dates, budget & pace" },
+      { src: "/projects/ruhub/03-home.png", label: "Home — immersive imagery of Asir’s landmarks like Jabal Al-Soudah" },
+      { src: "/projects/ruhub/04-splash.png", label: "Brand — Ruhub (رحب), grounded in Asir’s nature and identity" },
+      { src: "/projects/ruhub/05-profile.png", label: "Profile — travel preferences, bookings, payments & trip history" },
+    ],
     caseStudy: [
       {
         label: "Challenge",
-        body: "Define a meaningful tourism product and ship a complete, credible interface within a single hackathon sprint — under 20 hours, with judges and 50+ competing teams.",
+        body: "Define a meaningful tourism product for the Asir region and ship a complete, credible interface within a single hackathon sprint — under 20 hours, judged against 50+ competing teams.",
       },
       {
         label: "Research",
-        body: "Rapid competitive scanning and fast alignment on a single core traveler and the one job-to-be-done that would make the experience indispensable.",
+        body: "Rapid competitive scanning and fast alignment on a single core traveler: a visitor who wants to experience Asir's nature and culture but is overwhelmed by planning where to go, when, and how to book it.",
       },
       {
         label: "User Pain Points",
-        body: "Fragmented trip-planning tools, high-friction discovery, and no single trustworthy place for travelers to plan and act with confidence.",
+        body: "Fragmented trip-planning tools, high-friction discovery, and no single trustworthy place to turn intent into a real, bookable plan for the region.",
       },
       {
         label: "Solution",
-        body: "Ruhub unifies the travel journey into one coherent, approachable web app with clear information architecture, a guided flow, and a confident visual identity built under intense time pressure.",
+        body: "Ruhub pairs an AI assistant that generates a personalized daily itinerary — breakfast, a trip to Jabal Al-Soudah, lunch at a local spot, an evening activity — with one-tap booking, immersive imagery, and a confident Arabic-first identity rooted in Asir.",
       },
       {
         label: "Design Process",
-        body: "As Design Lead for a five-person team, I drove the UI direction end-to-end — sketch to high-fidelity — running design and development in parallel so the concept stayed both ambitious and buildable.",
+        body: "As Design Lead for a five-person team, I drove the UI direction end-to-end — from the assistant conversation and the generated day plan to bookings and profile — running design and development in parallel so the concept stayed both ambitious and buildable.",
       },
       {
         label: "Impact",
