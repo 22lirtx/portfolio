@@ -83,6 +83,10 @@ export interface Project {
   tags: string[];
   caseStudy: CaseStudyBlock[];
   gallery?: GalleryShot[];
+  /** Full-bleed image used as the card cover instead of the gradient. */
+  cover?: string;
+  /** Render the gallery as wide stacked slides instead of a phone-screen row. */
+  wideGallery?: boolean;
   figmaUrl?: string;
 }
 
@@ -178,28 +182,42 @@ export const PROJECTS: Project[] = [
     id: "afaq",
     index: "03",
     name: "Afaq",
-    tagline: "Smart Design System",
+    tagline: "Scalable UI Framework & Design System",
     description:
-      "A scalable design system architected as the capstone deliverable for the Cradis UI/UX bootcamp — 30+ components built with design tokens and variants in Figma.",
-    year: "Apr — Jul 2025",
-    role: "Design Systems · Cradis Bootcamp Capstone",
-    tags: ["Design System", "Tokens", "Figma", "Scalability"],
+      "آفاق — “From design tokens to teams”: a scalable UI framework and design system that powers a fully themed dashboard across light, dark, and brand themes. Built end-to-end in one week as the Cradis bootcamp capstone, grounded in atomic design and token-to-code workflows.",
+    year: "Jun 2025",
+    role: "Design Systems Lead · Cradis Capstone (Team 11)",
+    tags: ["Design System", "Design Tokens", "Theming", "Atomic Design"],
+    figmaUrl:
+      "https://www.figma.com/proto/ELEErtwpGGegyYD2mHI7Td/T-11-GP-Cradis?node-id=2259-13070",
+    cover: "/projects/afaq/cover.png",
+    wideGallery: true,
+    gallery: [
+      { src: "/projects/afaq/01-system.png", label: "The system — typography (Inter, Montserrat, Nunito), color, icons, grid & shadows" },
+      { src: "/projects/afaq/02-atom.png", label: "Atomic design — atoms, molecules, organisms, templates & pages, kept in design–dev sync" },
+      { src: "/projects/afaq/03-week.png", label: "One week — from brainstorming and components to a fully themed dashboard" },
+      { src: "/projects/afaq/04-results.png", label: "Result — a live, multi-theme dashboard powered entirely by the system" },
+    ],
     caseStudy: [
       {
         label: "Problem",
-        body: "Teams move slowly and inconsistently without a shared source of truth. The challenge was to architect a scalable, well-documented system that designers and engineers could trust and reuse.",
+        body: "Teams move slowly and inconsistently without a shared source of truth. The challenge: architect a scalable, well-documented design system that could theme an entire dashboard across light, dark, and brand modes — and stay in sync with code.",
       },
       {
         label: "Research",
-        body: "I audited common UI patterns and component needs, then defined a token strategy (color, type, spacing) and variant structure that would scale gracefully across products.",
+        body: "Working as Team 11, we studied tooling (Figma, token plugins, theming workflows) and atomic-design methodology, then defined a token strategy spanning color, typography, spacing, icons, grid, and shadows that could scale gracefully.",
       },
       {
         label: "Solution",
-        body: "Afaq is a 30+ component design system built in Figma with design tokens and variants — structured for consistency, theming, and clean developer handoff.",
+        body: "Afaq is a token-driven UI framework built on atomic design — atoms to pages — that powers a fully themed dashboard. Design tokens link to code, so switching themes is a single source-of-truth change rather than a manual reskin.",
+      },
+      {
+        label: "Process",
+        body: "From nothing to a fully themed dashboard in one week: brainstorming, building components, mapping tokens, then solving real challenges — converting tokens to JSON/CSS and linking variables to code for a clean, automated handoff.",
       },
       {
         label: "Outcomes",
-        body: "Showcased as the bootcamp's capstone deliverable, demonstrating end-to-end design-systems thinking: from foundational tokens to a documented, reusable component library.",
+        body: "A documented, reusable system showcased as the capstone deliverable — proof of end-to-end design-systems thinking, from foundational tokens to a live, multi-theme product.",
       },
     ],
   },

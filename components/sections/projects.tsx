@@ -29,13 +29,22 @@ function ProjectCard({
       >
         {/* Visual cover */}
         <div className="relative aspect-[16/10] overflow-hidden">
-          <div
-            className={`absolute inset-0 bg-gradient-to-br ${COVER_GRADIENTS[project.id]} transition-transform duration-700 group-hover:scale-105`}
-          />
+          {project.cover ? (
+            <img
+              src={project.cover}
+              alt={`${project.name} cover`}
+              loading="lazy"
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          ) : (
+            <div
+              className={`absolute inset-0 bg-gradient-to-br ${COVER_GRADIENTS[project.id]} transition-transform duration-700 group-hover:scale-105`}
+            />
+          )}
           <div className="absolute inset-0 grain opacity-20 mix-blend-overlay" />
 
-          {/* Floating real screens for projects that have a gallery */}
-          {project.gallery && (
+          {/* Floating real screens for phone-based projects */}
+          {project.gallery && !project.cover && (
             <div className="pointer-events-none absolute inset-x-0 bottom-0 flex items-end justify-center gap-3 sm:gap-5">
               {project.gallery.slice(0, 5).map((shot, i) => (
                 <img
@@ -171,8 +180,27 @@ function CaseStudyModal({
             </a>
           )}
 
-          {/* Real screen gallery */}
-          {project.gallery && (
+          {/* Wide stacked gallery (decks / dashboards) */}
+          {project.gallery && project.wideGallery && (
+            <div className="mt-8 space-y-5">
+              {project.gallery.map((shot) => (
+                <figure key={shot.src}>
+                  <img
+                    src={shot.src}
+                    alt={shot.label}
+                    loading="lazy"
+                    className="w-full rounded-2xl border border-warm-200/70 shadow-glass dark:border-white/10"
+                  />
+                  <figcaption className="mt-2 text-sm leading-snug text-warm-500 dark:text-warm-400">
+                    {shot.label}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+
+          {/* Phone-screen gallery (horizontal scroll) */}
+          {project.gallery && !project.wideGallery && (
             <div className="-mx-7 mt-8 flex snap-x gap-4 overflow-x-auto px-7 pb-3 sm:-mx-9 sm:px-9">
               {project.gallery.map((shot) => (
                 <figure key={shot.src} className="w-[200px] shrink-0 snap-start sm:w-[220px]">
