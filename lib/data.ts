@@ -236,6 +236,48 @@ export const PROJECTS: Project[] = [
       },
     ],
   },
+  {
+    id: "ruh",
+    index: "05",
+    name: "Roh Al-Mashaer",
+    tagline: "AI Companion for Hajj & Umrah",
+    description:
+      "روح المشاعر — an Arabic-first, AI-powered companion that guides pilgrims through every step of Hajj and Umrah: a smart voice assistant, ritual step-by-step guidance, contextual supplications, prayer times, family tracking, and wayfinding.",
+    year: "2025",
+    role: "Lead UX/UI Designer · Hackathon",
+    tags: ["AI Assistant", "Arabic-first RTL", "Voice UX", "Civic Tech"],
+    figmaUrl:
+      "https://www.figma.com/design/mnqDVenyWUZbz2ufdcTBwh/?node-id=1-1723",
+    gallery: [
+      { src: "/projects/ruh/01-home.png", label: "Home — the AI smart voice assistant with quick access to rituals, duas, gates & prayer times" },
+      { src: "/projects/ruh/02-trip.png", label: "Trip selection — tailored guidance for Umrah or the full Hajj journey" },
+      { src: "/projects/ruh/03-assistant.png", label: "Voice assistant — conversational, step-by-step ritual guidance with audio" },
+      { src: "/projects/ruh/04-dua.png", label: "Supplications — contextual du'as with Quranic verse, transliteration & save/copy" },
+      { src: "/projects/ruh/05-splash.png", label: "Brand — “your companion on the sacred journey”" },
+    ],
+    caseStudy: [
+      {
+        label: "Problem",
+        body: "Performing Hajj and Umrah involves many precise rituals, supplications, and movements that can overwhelm first-time and international pilgrims — especially without timely, trustworthy, language-accessible guidance.",
+      },
+      {
+        label: "Research",
+        body: "Built for a Hajj & Umrah innovation hackathon, the team studied the pilgrim journey for both Umrah and the longer Hajj, pinpointing where people feel uncertain: starting the Tawaf, knowing the right du'a, finding the nearest gate, and keeping family together.",
+      },
+      {
+        label: "Solution",
+        body: "Roh Al-Mashaer pairs a conversational AI voice assistant with structured ritual guidance — answering questions like “how do I begin the Tawaf?” with clear, audio-supported steps, surfacing the right supplication for each moment, and offering prayer times, maps, and family features in one calm, Arabic-first interface.",
+      },
+      {
+        label: "Design Process",
+        body: "I led the UI/UX and designed the full Arabic-first RTL experience in Figma — from onboarding and trip selection to the assistant conversation, du'a cards, and navigation — keeping clarity, reassurance, and accessibility at the center of every screen.",
+      },
+      {
+        label: "Outcomes",
+        body: "A complete, demoable concept showing how an AI companion can make sacred rituals feel approachable and stress-free — guidance that meets pilgrims in their own language, at the exact moment they need it.",
+      },
+    ],
+  },
 ];
 
 export interface ExperienceItem {

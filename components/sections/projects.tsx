@@ -11,6 +11,7 @@ const COVER_GRADIENTS: Record<string, string> = {
   ruhub: "from-gold-light via-rose-400 to-gold-deep",
   afaq: "from-warm-700 via-gold to-rose-300",
   murshd: "from-[#1b1740] via-[#4c1d95] to-[#7c3aed]",
+  ruh: "from-[#3b2566] via-[#6d4aa8] to-[#b69ad6]",
 };
 
 function ProjectCard({
@@ -237,7 +238,7 @@ export function Projects() {
             <div
               key={project.id}
               className={
-                i === 0 || i === PROJECTS.length - 1 ? "lg:col-span-2" : ""
+                i === 0 || project.gallery ? "lg:col-span-2" : ""
               }
             >
               <ProjectCard project={project} onOpen={() => setActive(project)} />
