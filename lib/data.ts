@@ -101,6 +101,7 @@ export const PROJECTS: Project[] = [
     year: "Sep 2025 — Present",
     role: "Senior Capstone · Lead UX/UI Designer",
     tags: ["AI", "Voice UX", "Arabic-first RTL", "Safety"],
+    cover: "/projects/seraaj.png",
     caseStudy: [
       {
         label: "Challenge",
