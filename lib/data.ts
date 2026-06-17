@@ -144,6 +144,7 @@ export const PROJECTS: Project[] = [
     tags: ["Hackathon", "Tourism", "AI Planner", "Top 4 / 50+"],
     figmaUrl:
       "https://www.figma.com/proto/IULsTKCVdQ2dZXSDt0anHD/?node-id=247-6313",
+    cover: "/projects/ruhub/cover.png",
     gallery: [
       { src: "/projects/ruhub/01-plan.png", label: "“Your day is ready” — an AI-generated itinerary with timed experiences and one-tap booking" },
       { src: "/projects/ruhub/02-assistant.png", label: "Smart assistant — conversationally tailors the trip to your dates, budget & pace" },
