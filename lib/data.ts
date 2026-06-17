@@ -147,11 +147,11 @@ export const PROJECTS: Project[] = [
       "https://www.figma.com/proto/1mBXubAbP520N84FioP6OY/%D8%B1%D9%90%D8%AD%D8%A8?node-id=1-62&page-id=0%3A1&starting-point-node-id=1%3A62",
     cover: "/projects/ruhub/cover.png",
     gallery: [
-      { src: "/projects/ruhub/01-plan.png", label: "“Your day is ready” — an AI-generated itinerary with timed experiences and one-tap booking" },
-      { src: "/projects/ruhub/02-assistant.png", label: "Smart assistant — conversationally tailors the trip to your dates, budget & pace" },
-      { src: "/projects/ruhub/03-home.png", label: "Home — immersive imagery of Asir’s landmarks like Jabal Al-Soudah" },
-      { src: "/projects/ruhub/04-splash.png", label: "Brand — Ruhub (رحب), grounded in Asir’s nature and identity" },
-      { src: "/projects/ruhub/05-profile.png", label: "Profile — travel preferences, bookings, payments & trip history" },
+      { src: "/projects/ruhub/01-home.png", label: "Home — image-first discovery of Asir with live weather, an AI-planner banner & category filters" },
+      { src: "/projects/ruhub/02-discovery.png", label: "Discovery — browse Asir’s landmarks with ratings, duration & pricing" },
+      { src: "/projects/ruhub/03-detail.png", label: "Place detail — immersive hero, highlights, reviews & a sticky booking CTA" },
+      { src: "/projects/ruhub/04-assistant.png", label: "AI assistant — conversationally tailors the trip to your dates, budget & pace" },
+      { src: "/projects/ruhub/05-planner.png", label: "AI trip planner — a ready, editable day-by-day itinerary you can book" },
     ],
     caseStudy: [
       {
