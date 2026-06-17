@@ -144,7 +144,7 @@ export const PROJECTS: Project[] = [
     role: "Design Lead · Asir Hackathon",
     tags: ["Hackathon", "Tourism", "AI Planner", "Top 4 / 50+"],
     figmaUrl:
-      "https://www.figma.com/proto/IULsTKCVdQ2dZXSDt0anHD/?node-id=247-6313",
+      "https://www.figma.com/proto/1mBXubAbP520N84FioP6OY/%D8%B1%D9%90%D8%AD%D8%A8?node-id=1-62&page-id=0%3A1&starting-point-node-id=1%3A62",
     cover: "/projects/ruhub/cover.png",
     gallery: [
       { src: "/projects/ruhub/01-plan.png", label: "“Your day is ready” — an AI-generated itinerary with timed experiences and one-tap booking" },
