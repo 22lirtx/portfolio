@@ -101,7 +101,16 @@ export const PROJECTS: Project[] = [
     year: "Sep 2025 — Present",
     role: "Senior Capstone · Lead UX/UI Designer",
     tags: ["AI", "Voice UX", "Arabic-first RTL", "Safety"],
-    cover: "/projects/seraaj.png",
+    cover: "/projects/seraaj/cover.png",
+    figmaUrl:
+      "https://www.figma.com/design/DYzJPAlDgP5TzynZyYEN16/%D8%B3%D8%B1%D8%A7%D8%AC?node-id=575-575",
+    gallery: [
+      { src: "/projects/seraaj/01-voice.png", label: "Voice listening — Seraaj listens over a dimmed map with a live waveform and spoken-command suggestions, keeping eyes on the road" },
+      { src: "/projects/seraaj/02-navigation.png", label: "Turn-by-turn — a dark, glanceable maneuver card with Seraaj's «watching · safe» AI-presence pill" },
+      { src: "/projects/seraaj/03-drowsiness.png", label: "Drowsiness alert — the AI co-driver detects fatigue and proposes the nearest rest stop, hands-free" },
+      { src: "/projects/seraaj/04-speed.png", label: "Speed monitoring — a calm gauge with road-limit awareness and a weekly safe-driving trend" },
+      { src: "/projects/seraaj/05-emergency.png", label: "Emergency — a full-screen SOS flow with one-tap calling and live location sharing" },
+    ],
     caseStudy: [
       {
         label: "Challenge",
@@ -144,7 +153,7 @@ export const PROJECTS: Project[] = [
     role: "Design Lead · Asir Hackathon",
     tags: ["Hackathon", "Tourism", "AI Planner", "Top 4 / 50+"],
     figmaUrl:
-      "https://www.figma.com/proto/1mBXubAbP520N84FioP6OY/%D8%B1%D9%90%D8%AD%D8%A8?node-id=1-62&page-id=0%3A1&starting-point-node-id=1%3A62",
+      "https://www.figma.com/proto/IULsTKCVdQ2dZXSDt0anHD/%D8%B1%D9%90%D8%AD%D8%A8?node-id=513-3090&page-id=477%3A3090&starting-point-node-id=513%3A3090&scaling=scale-down&content-scaling=fixed",
     cover: "/projects/ruhub/cover.png",
     gallery: [
       { src: "/projects/ruhub/01-home.png", label: "Home — image-first discovery of Asir with live weather, an AI-planner banner & category filters" },
