@@ -101,9 +101,9 @@ export const PROJECTS: Project[] = [
     year: "Sep 2025 — Present",
     role: "Senior Capstone · Lead UX/UI Designer",
     tags: ["AI", "Voice UX", "Arabic-first RTL", "Safety"],
-    cover: "/projects/seraaj/cover.png",
+    cover: "/projects/seraaj.png",
     figmaUrl:
-      "https://www.figma.com/design/DYzJPAlDgP5TzynZyYEN16/%D8%B3%D8%B1%D8%A7%D8%AC?node-id=575-575",
+      "https://www.figma.com/proto/DYzJPAlDgP5TzynZyYEN16/%D8%B3%D8%B1%D8%A7%D8%AC?node-id=736-19&starting-point-node-id=575%3A576&page-id=575%3A575&scaling=scale-down&content-scaling=fixed",
     gallery: [
       { src: "/projects/seraaj/01-voice.png", label: "Voice listening — Seraaj listens over a dimmed map with a live waveform and spoken-command suggestions, keeping eyes on the road" },
       { src: "/projects/seraaj/02-navigation.png", label: "Turn-by-turn — a dark, glanceable maneuver card with Seraaj's «watching · safe» AI-presence pill" },
